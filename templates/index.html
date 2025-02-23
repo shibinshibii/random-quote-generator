@@ -74,7 +74,7 @@
     <script>
         document.getElementById("copy").addEventListener("click",copyQuote)
         function getQuote() {
-            fetch('http://127.0.0.1:8000/api/random/')
+            fetch("https://random-quote-generator-xlpy.onrender.com/api/random/")
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById("quote").innerText = `"${data.content}"`;
